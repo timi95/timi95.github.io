@@ -98,6 +98,10 @@ main > ul
 }
 main > ul > li
 {
+    display: flex;
+    padding: 3em;
+    align-items:  center ;
+    justify-content: center;
     list-style: none;
 }
 /* MAIN END */
