@@ -2,8 +2,8 @@ body
 {   margin:0px;
     background-color: #313131d3;
     
-    height: 200vh;
-    width: 100%;
+    min-height: 200vh;
+    min-width: 100%;
 
     
     
