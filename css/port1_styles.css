@@ -127,7 +127,7 @@ footer >ul{
 }
 footer > ul > li
 {
-    min-width: 1vh;
+    /* min-width: 1vh; */
     list-style: none;
     padding: 1em;
 }
@@ -333,12 +333,13 @@ main > ul > li
 
 footer > ul > li
 {
-    width: 100%;
-    
     list-style: none;
-    padding-right: 50% ;
-    padding-left: 30% ;
+    padding: 1em;
      
+}
+footer > ul > li > p{
+    width: 100%;
+    overflow-wrap: break-word; 
 }
 
 
