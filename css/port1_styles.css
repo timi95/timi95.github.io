@@ -131,7 +131,7 @@ footer > ul > li
     list-style: none;
     padding: 1em;
 }
-iframe {
+object {
     width: 80%;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -375,7 +375,7 @@ footer > ul > li
 /* TOOLTIP END */
 
 
-iframe {
+object {
     -moz-border-radius: 12px;
     -webkit-border-radius: 12px;
     border-radius: 12px;
@@ -557,7 +557,7 @@ footer > ul > li
 }
 /* TOOLTIP END */
 
-iframe {
+object {
     -moz-border-radius: 12px;
     -webkit-border-radius: 12px;
     border-radius: 12px;
