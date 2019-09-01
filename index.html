@@ -12,6 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link rel="stylesheet" href="css/port1_styles.css">
+        <script src="js/object-carousel.js" charset="utf-8"></script>
     </head>
     <body>
         <!-- NAVIGATION -->
@@ -31,10 +32,6 @@
                 <a href="https://www.linkedin.com/in/timi-ogunkeye-7774ba66/">
                     <b> <i class="fab fa-linkedin fa-2x"></i> </b>
                 </a>
-                <a href="https://medium.com/@timi.ogunkeye/">
-                    <b> <i class="fab fa-medium fa-2x"></i> </b>
-                </a>
-
             </ul>
         </nav>
 
@@ -47,7 +44,6 @@
                 </strong>
                 <h1>
                     <style>
-                        /* I BET YOU INSPECTED JUST TO CHECK THIS OUT ;) . A SIMPLE BUT FUN IMPLEMENT OF CSS TRANSITIONS */
                          b{ transition: 8s; color: black; text-decoration: none; height: 0px;}
                          b:hover{ transition: 0.1s ;  color:rgb(8, 204, 204);}
                     </style>
@@ -71,22 +67,60 @@
                     <b>R</b>
                 </h1>
 
-                <p style="text-shadow: 0px 0px 1px rgba(0,255,255,0.7); font-weight:600;" >
-                    Hi, I am Timi Ogunkeye.
-                    A software developer and a graduate of Bangor University (North Wales United Kingdom).
-                    I have a diverse skillset, including full-stack website creation, in-house custom software, and even more diverse interests, ranging from basketball to illustration.
-                    You can view some projects of mine at my
-                    <a style=" margin: 0px; padding: 0px;"
-                     href="https://github.com/timi95">
+                <style media="screen">
+                    .buttons {
+                    display: flex;
+                    justify-content: space-between;
+                    }
+                  .carefree > a {
+                     text-align: center;
+                    background: #f7f7f7;
+                    border: 1px solid #e9e9e9;
+                    border-radius: 50%;
+                    word-wrap: break-word;
+                    padding: 10px;
+                    width: 5%;
+                    height: 20%;
+                    }
+                  .carefree >  a:active{
+                    background: #c4d7d8;
+                    }
+                    .but1{
+                    transform: rotate(180deg);
+                    }
+
+                  .carefree  img {
+                    box-shadow: 9px 8px #e0dbdb;
+                    width: 90% !important;
+                    margin-right: 10%;
+                    }
+                  .carefree>  ul{
+                    align-items: left;
+                    padding: 0;
+                    margin:0;
+                    list-style: none;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    /* background: green; */
+                    }
+                </style>
+                <p> I do all sorts..obviously not design 😑... for now. <br>
+                  Check out my <a style=" margin: 0px; padding: 0px;" href="https://github.com/timi95">
                          <b>GitHub</b>
                     </a>
-                     page.
                 </p>
+                <div class="carefree">
+
+                  <ul class="buttons" id="carousel"></ul>
+
+                </div>
+
         </header>
 
         <!-- MAIN BLURB SECTION -->
         <main>
-            <h3>Technologies:</h3>
+            <h1>Technologies:</h1>
                 <ul>
                     <!-- Python , Java, C -->
                     <li class="tooltip">
@@ -171,11 +205,10 @@
 
         <!-- FOOTER SECTION   -->
         <footer>
-            <h2> Past projects </h2>
+            <h1> Past projects </h1>
             <ul>
                 <li class="vid-1">
                         <object data="https://www.youtube.com/embed/n7wcPsIFHKo"> video not loading for whatever reason -_- </object>
-                    <!-- <iframe  height="150" src="https://www.youtube.com/embed/n7wcPsIFHKo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                     <p style="text-shadow: 0px 0px 1px rgba(0,255,255,0.7); font-weight:600;">
                     This is a simulation of the biological phenomenon of Genetic Drift.
                     Two different breeds constantly reproduce at arbitrary rates and are restricted in their movements via Island Topology.
@@ -184,7 +217,6 @@
                 </li>
                 <li class="vid-2">
                         <object data="https://www.youtube.com/embed/0OdM1upSgdU"> video not loading for whatever reason -_- </object>
-                    <!-- <iframe  height="150" src="https://www.youtube.com/embed/0OdM1upSgdU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                     <p style="text-shadow: 0px 0px 1px rgba(0,255,255,0.7); font-weight:600;">
                             Another version of the Genetic Drift simulation, but I experimented with indtroducing an intermediate/mutant breed
                             whenever cross reproduction occured, in order to see how fast true purity/in-breeding was eroded.
@@ -192,7 +224,6 @@
                 </li>
                 <li class="vid-3">
                         <object data="https://www.youtube.com/embed/e80d21NjF_8"> video not loading for whatever reason -_- </object>
-                    <!-- <iframe  height="150" src="https://www.youtube.com/embed/e80d21NjF_8"frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                     <p style="text-shadow: 0px 0px 1px rgba(0,255,255,0.7);font-weight:600;">
                             This is a demonstration of basic Motion Detection using OpenCV in C/C++.
                             Here I am waving and winking in front of the camera to test show sensitive my program was.
